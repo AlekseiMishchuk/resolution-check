@@ -401,3 +401,9 @@ FodyWeavers.xsd
 cm-client/
 .DS_Store
 
+obj/project.assets.json
+obj/project.nuget.cache
+obj/resolution-check.csproj.nuget.dgspec.json
+obj/Debug/net6.0/resolution-check.assets.cache
+obj/Debug/net6.0/resolution-check.csproj.AssemblyReference.cache
+obj/Debug/net6.0/resolution-check.GeneratedMSBuildEditorConfig.editorconfig
