@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using System.Reflection;
 using SkiaSharp;
 
 
@@ -23,17 +24,21 @@ IEnumerable<string> SearchAllPngs(EraPart eraPart)
 {
     try
     {
-        string currentDirectory = Directory.GetCurrentDirectory();
+        string? currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        ArgumentNullException.ThrowIfNull(currentDirectory);
 
         if (eraPart == EraPart.SlotMachine)
         {
             string directoryPath = Path.Combine(currentDirectory, contentPath, "SlotMachines", eraName);
+
+            Console.WriteLine(directoryPath);
             IEnumerable<string> allPngs = Directory.EnumerateFiles(directoryPath, "*.png", SearchOption.AllDirectories);
             return allPngs;
         }
         else
         {
             string directoryPath = Path.Combine(currentDirectory, contentPath, "Villages", eraName);
+            Console.WriteLine(directoryPath);
             IEnumerable<string> allPngs = Directory.EnumerateFiles(directoryPath, "*.png", SearchOption.AllDirectories);
             return allPngs;
         }
