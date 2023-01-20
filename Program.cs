@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.IO;
+using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
 using SkiaSharp;
 
 
@@ -18,32 +19,30 @@ Console.WriteLine($"SlotMachines{Path.DirectorySeparatorChar}");
 ResolutionCheck(SearchAllPngs(EraPart.SlotMachine));
 Console.WriteLine($"\nVillages{Path.DirectorySeparatorChar}");
 ResolutionCheck(SearchAllPngs(EraPart.Village));
+Console.ReadKey();
 
 
 IEnumerable<string> SearchAllPngs(EraPart eraPart)
 {
     try
     {
-        string? currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        string currentDirectory = AppContext.BaseDirectory;
         ArgumentNullException.ThrowIfNull(currentDirectory);
 
         if (eraPart == EraPart.SlotMachine)
         {
             string directoryPath = Path.Combine(currentDirectory, contentPath, "SlotMachines", eraName);
-
-            Console.WriteLine(directoryPath);
             IEnumerable<string> allPngs = Directory.EnumerateFiles(directoryPath, "*.png", SearchOption.AllDirectories);
             return allPngs;
         }
         else
         {
             string directoryPath = Path.Combine(currentDirectory, contentPath, "Villages", eraName);
-            Console.WriteLine(directoryPath);
             IEnumerable<string> allPngs = Directory.EnumerateFiles(directoryPath, "*.png", SearchOption.AllDirectories);
             return allPngs;
         }
     }
-    catch (System.IO.DirectoryNotFoundException)
+    catch (DirectoryNotFoundException)
     {
         Console.WriteLine("Cannot find such directories.");
         Console.ReadKey();

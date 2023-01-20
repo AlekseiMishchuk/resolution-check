@@ -407,3 +407,7 @@ obj/resolution-check.csproj.nuget.dgspec.json
 obj/Debug/net6.0/resolution-check.assets.cache
 obj/Debug/net6.0/resolution-check.csproj.AssemblyReference.cache
 obj/Debug/net6.0/resolution-check.GeneratedMSBuildEditorConfig.editorconfig
+/.idea/.idea.resolution-check/.idea/indexLayout.xml
+/.idea/.idea.resolution-check/.idea/vcs.xml
+/.idea/.idea.resolution-check/.idea/.gitignore
+/.idea/.idea.resolution-check/.idea/riderPublish.xml
