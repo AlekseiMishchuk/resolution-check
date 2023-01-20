@@ -10,9 +10,9 @@
 
 ## Download
 
-**Windows**:
+**Windows**: [win-resolution-check.zip](https://github.com/AlexeyMischuk/resolution-check/releases/download/0.1/win-resolution-check.zip)
 
-**Mac OS**:
+**Mac OS**: [macos-resolution-check.zip](https://github.com/AlexeyMischuk/resolution-check/releases/download/0.1/macos-resolution-check.zip)
 
 ## Installation
 
