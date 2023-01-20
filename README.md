@@ -10,29 +10,32 @@
 
 ## Download
 
-Windows:
+**Windows**:
 
-Mac OS:
+**Mac OS**:
 
 ## Installation
 
 Содержимое архива поместить в папку с клиентом *“cm-client”*
 
-![Screenshot 2023-01-20 at 23.37.25.png](Resolution-check%207a8f3ca663ea46abacaa6021b1cf5660/Screenshot_2023-01-20_at_23.37.25.png)
+<img width="357" alt="Screenshot_2023-01-20_at_23 37 25" src="https://user-images.githubusercontent.com/93237623/213808145-00817441-eeff-49d1-9746-37a51b51bb16.png">
+
+
 
 # Usage
 
-После запуска программы и вывода сообщения, следует ввести название эпохи, так как оно указано в **Project View** Unity, с соблюдением регистра:
+- После запуска программы и вывода сообщения, следует ввести название эпохи, так как оно указано в **Project View** Unity, с соблюдением регистра:
 
-> Enter the Era name, like in the project view (e.g.: SteampunkVenice): LairOfCriminals
->
+  > Enter the Era name, like in the project view (e.g.: SteampunkVenice): LairOfCriminals
 
-![Screenshot 2023-01-20 at 23.55.53.png](Resolution-check%207a8f3ca663ea46abacaa6021b1cf5660/Screenshot_2023-01-20_at_23.55.53.png)
 
-Программа выведет список всех .png в два блока (отдельно для слот-машин и отдельно для деревень), с указанием разрешения изображения:
+<img width="407" alt="Screenshot_2023-01-20_at_23 55 53" src="https://user-images.githubusercontent.com/93237623/213808153-6b744707-9ac1-49f8-a7ea-6ac600c78825.png">
 
-![Screenshot 2023-01-21 at 00.01.15.png](Resolution-check%207a8f3ca663ea46abacaa6021b1cf5660/Screenshot_2023-01-21_at_00.01.15.png)
+- Программа выведет список всех .png в два блока (отдельно для слот-машин и отдельно для деревень), с указанием разрешения изображения:
 
-Если разрешение одной из сторон не кратно 4, файл в списке будет выделен знаками *“-”*:
+<img width="731" alt="Screenshot_2023-01-21_at_00 01 15" src="https://user-images.githubusercontent.com/93237623/213808155-1d804f60-7433-48c5-9240-819d719f8caf.png">
 
-![Screenshot 2023-01-21 at 00.01.29.png](Resolution-check%207a8f3ca663ea46abacaa6021b1cf5660/Screenshot_2023-01-21_at_00.01.29.png)
+- Если разрешение одной из сторон не кратно 4, файл в списке будет выделен знаками *“-”*:
+
+<img width="720" alt="Screenshot_2023-01-21_at_00 01 29" src="https://user-images.githubusercontent.com/93237623/213808159-8feeead0-a694-4d4e-856f-15b8ba6b294b.png">
+
