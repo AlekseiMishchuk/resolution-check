@@ -64,16 +64,18 @@ void ResolutionCheck(IEnumerable<string> pngList)
 
 void FormatOutput(string filePath, int imgHeight, int imgWidth)
 {
+    const int maxPathLength = 80;
+    
     string resolution = imgHeight + "x" + imgWidth;
     string lastPartPath = PathSplit(filePath);
     if (imgHeight%4 == 0 && imgWidth%4 == 0)
     {
-        Console.WriteLine("{0,-80}{1}", lastPartPath, resolution);
+        Console.WriteLine($"{lastPartPath, -maxPathLength}{resolution}");
     }
     else
     {
         Console.Write(lastPartPath);
-        for(int i = 0; i < (80 - lastPartPath.Length); i++)
+        for(int i = 0; i < (maxPathLength - lastPartPath.Length); i++)
             Console.Write("-");
         Console.WriteLine(resolution);
     }
